@@ -1,0 +1,16 @@
+{
+	"name": "messaging-service",
+	"version": "0.1.0",
+	"description": "",
+	"scripts": {},
+	"homepage": "https://github.com/rso-magisterium/messaging-service#readme",
+	"bugs": {
+		"url": "https://github.com/rso-magisterium/messaging-service/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/rso-magisterium/messaging-service.git"
+	},
+	"license": "MIT",
+	"author": "Miha Meglic <miha@meglic.dev>"
+}
