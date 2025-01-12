@@ -1,0 +1,14 @@
+query getUsers {
+  users {
+    id
+    name
+    email
+  }
+}
+
+query getContacts($tenantId: String = "") {
+  users(where: { tenants: { some: { id: { equals: $tenantId } } } }) {
+    id
+    name
+  }
+}
