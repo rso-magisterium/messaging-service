@@ -3,10 +3,12 @@ services:
     build:
       context: .
     ports:
-      - 3000:3000
+      - 3001:3000
     environment:
       NODE_ENV: production
+      PORT: 3000
       DATABASE_URL: postgresql://messaging-svc:verysecretpassword@db/messaging-service?schema=public
+      USER_SERVICE_URL: http://host.docker.internal:3000
     env_file:
       - .env
     depends_on:

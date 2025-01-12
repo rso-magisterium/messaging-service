@@ -6,7 +6,7 @@ dotenv.config();
 const config: CodegenConfig = {
   overwrite: true,
   schema: `${process.env.USER_SERVICE_URL}/graphql`,
-  documents: "src/graphql/**/*.graphql",
+  documents: "./src/graphql/**/*.graphql",
   emitLegacyCommonJSImports: false,
   generates: {
     "./src/graphql/generated/graphql.ts": {
